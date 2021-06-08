@@ -11,6 +11,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+            - sleep 120
 promotions:
   - name: Deploy to Production
     pipeline_file: pipeline_2.yml
