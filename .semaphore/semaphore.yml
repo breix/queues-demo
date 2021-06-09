@@ -11,6 +11,3 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-promotions:
-  - name: Deploy to Production
-    pipeline_file: pipeline_2.yml
