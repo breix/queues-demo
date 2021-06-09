@@ -5,8 +5,8 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 queue:
-		name: my-queue
-    scope: project
+  name: Deployment queue
+  scope: project
 blocks:
   - name: 'Block #1'
     task:
