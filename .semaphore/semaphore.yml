@@ -12,5 +12,5 @@ blocks:
           commands:
             - checkout
 promotions:
-  - name: Deploy to Production
+  - name: Deploy to Production YOLO
     pipeline_file: pipeline_2.yml
