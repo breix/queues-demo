@@ -1,16 +1,17 @@
 version: v1.0
-name: Initial Pipeline
+name: Pipeline 3
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
+queue:
+		name: my-queue
+    scope: project
 blocks:
   - name: 'Block #1'
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
-promotions:
-  - name: Launch sleep
-    pipeline_file: pipeline_3.yml
+            - echo "job 1"
+            - sleep 40
